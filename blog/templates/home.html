@@ -1,18 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>sth</p>
+ {% extends 'base.html' %}
+{% load static %}
+ {% block main %}
+     <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{% static "blog/img/home-bg.jpg" %}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-{% for a in Articles %}
-    <h1> {{ a.title }}</h1>
-    <img src="{{ a.thumbnail.url }}" alt="{{ a.title }}" width="600" height="400">
-    <h1><a href="{% url 'blog:detail' a.slug %}">{{ a.title }}</a></h1>
-    <p>{{ a.description }}</p>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
 
-{% endfor %}
-</body>
-</html>
+        {% for a in Articles %}
+        <div class="post-preview">
+          <a href="{% url 'blog:detail' a.slug %}">
+            <h2 class="post-title">
+              {{a.title}}
+            </h2>
+            <h3 class="post-subtitle">
+              {{ a.description | truncatewords:30}}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">zara</a>
+            {{a.publish}}</p>
+        </div>
+        <hr>
+        {% endfor %}
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ {% endblock %}

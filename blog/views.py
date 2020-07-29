@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Article
 from django.http import HttpResponse, JsonResponse
 
 
 def index(request):
-    return HttpResponse("some thing")
+    return render(request, 'home.html')
 
 
 def json(request):
@@ -40,7 +40,7 @@ def template(request):
         ]
 
     }
-    return render(request, 'test.html', context)
+    return render(request, 'about.html', context)
 
 
 def list_all_article(request):
@@ -52,6 +52,6 @@ def list_all_article(request):
 
 def detail_article(request, slug):
     context = {
-        "article": Article.objects.get(slug=slug)
+        "article": get_object_or_404(Article, slug=slug, status="p")
     }
-    return render(request, 'detail.html', context)
+    return render(request, 'post.html', context)
