@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29470d84-377f-45f9-a401-19bde09cc982" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/silic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silic/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silic/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silic/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/silic/wsgi.py" afterDir="false" />
+    <list default="true" id="29470d84-377f-45f9-a401-19bde09cc982" name="Default Changelist" comment="add some config to use a ready template">
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/detail.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,15 +36,32 @@
     </option>
   </component>
   <component name="ProjectId" id="1fBNGu7u1qyWzR9RaoTKclyXWtt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zaraz\Desktop\silic-django-app\silic" />
+      <recent name="C:\Users\zaraz\Desktop\silic-django-app\silic\blog" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="silic" type="Python.DjangoServer" factoryName="Django server">
@@ -56,6 +70,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="silic.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -97,21 +112,119 @@
       <option name="presentableId" value="Default" />
       <updated>1595687433467</updated>
       <workItem from="1595687438059" duration="591000" />
-      <workItem from="1595688908544" duration="359000" />
+      <workItem from="1595688908544" duration="10074000" />
+      <workItem from="1595827663019" duration="7800000" />
+      <workItem from="1595920575069" duration="9709000" />
+      <workItem from="1595936206773" duration="40000" />
+      <workItem from="1595961674478" duration="1811000" />
+      <workItem from="1595998498718" duration="6747000" />
+      <workItem from="1596090778393" duration="6826000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit:create blog">
+      <created>1595689325825</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595689325825</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test views.py with templates">
+      <created>1595829877292</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595829877292</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create database in model">
+      <created>1595830495658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595830495658</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change settings and urls for MEDIA_ROOT">
+      <created>1595831020034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595831020034</updated>
+    </task>
+    <task id="LOCAL-00005" summary="admin panel managment">
+      <created>1595836259629</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595836259629</updated>
+    </task>
+    <task id="LOCAL-00006" summary="list of all articles and detail of an article">
+      <created>1595926425651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595926425651</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add some config to use a ready template">
+      <created>1596006678601</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596006678601</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit:create blog" />
+    <MESSAGE value="test views.py with templates" />
+    <MESSAGE value="create database in model" />
+    <MESSAGE value="change settings and urls for MEDIA_ROOT" />
+    <MESSAGE value="admin panel managment" />
+    <MESSAGE value="list of all articles and detail of an article" />
+    <MESSAGE value="add some config to use a ready template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some config to use a ready template" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1595689223705">
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595926867273">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1595689223705" />
-    <state x="379" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1595688940035">
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1595926867273" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596006674260">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1595688940035" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596006674260" />
+    <state x="463" y="140" key="FileChooserDialogImpl" timestamp="1595936250159">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595936250159" />
+    <state width="1306" height="189" key="GridCell.Tab.0.bottom" timestamp="1596007937711">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
+    <state width="1306" height="189" key="GridCell.Tab.0.center" timestamp="1596007937711">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
+    <state width="1306" height="189" key="GridCell.Tab.0.left" timestamp="1596007937711">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
+    <state width="1306" height="189" key="GridCell.Tab.0.right" timestamp="1596007937711">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="189" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
+    <state x="184" y="27" key="SettingsEditor" timestamp="1595836198160">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="27" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595836198160" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596006685908">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596006685908" />
+    <state x="379" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1596090923407">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596090923407" />
   </component>
 </project>

@@ -2,6 +2,21 @@ from django.db import models
 from django.utils import timezone
 
 
+class Category(models.Model):
+    title = models.CharField(max_length=100, verbose_name="دسته‌بندی")
+    slug = models.SlugField(max_length=100, unique=True, allow_unicode=True, verbose_name="آدرس دسته‌بندی")
+    status = models.BooleanField(default=True, verbose_name="آیا نمایش داده شود؟")
+    position = models.IntegerField(verbose_name="پوزیشن")
+
+    class Meta:
+        verbose_name = "دسته‌بندی"
+        verbose_name_plural = "دسته‌بندی‌ها"
+        ordering = ['position']
+
+    def __str__(self):
+        return self.title
+
+
 class Article(models.Model):
     STATUS_CHOICE = (
         ('d', 'پیش‌نویس'),
@@ -9,7 +24,8 @@ class Article(models.Model):
     )
 
     title = models.CharField(max_length=100, verbose_name="عنوان")
-    slug = models.SlugField(max_length=100, unique=True, allow_unicode=True, verbose_name="عنوان مقاله")
+    slug = models.SlugField(max_length=100, unique=True, allow_unicode=True, verbose_name="آدرس مقاله")
+    category = models.ManyToManyField(Category)
     description = models.TextField(verbose_name="متن")
     thumbnail = models.ImageField(upload_to='images')
     publish = models.DateTimeField(default=timezone.now)
