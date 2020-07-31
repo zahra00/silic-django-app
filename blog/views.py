@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Article
+from .models import Article, Category
 from django.http import HttpResponse, JsonResponse
 
 
@@ -45,7 +45,7 @@ def template(request):
 
 def list_all_article(request):
     context = {
-        "Articles": Article.objects.all()
+        "Articles": Article.objects.filter(status="p")
     }
     return render(request, 'home.html', context)
 
