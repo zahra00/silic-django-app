@@ -55,3 +55,10 @@ def detail_article(request, slug):
         "article": get_object_or_404(Article, slug=slug, status="p")
     }
     return render(request, 'post.html', context)
+
+
+def category(request, slug):
+    context = {
+        "article": get_object_or_404(Category, slug=slug, status=True)
+    }
+    return render(request, 'category.html', context)

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29470d84-377f-45f9-a401-19bde09cc982" name="Default Changelist" comment="add some config to use a ready template">
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/partials/category_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/partials/category_navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,6 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,7 +121,12 @@
       <workItem from="1595936206773" duration="40000" />
       <workItem from="1595961674478" duration="1811000" />
       <workItem from="1595998498718" duration="6747000" />
-      <workItem from="1596090778393" duration="6826000" />
+      <workItem from="1596090778393" duration="11505000" />
+      <workItem from="1596130389534" duration="125000" />
+      <workItem from="1596180053049" duration="5649000" />
+      <workItem from="1596475901083" duration="813000" />
+      <workItem from="1596521363244" duration="4743000" />
+      <workItem from="1596563285710" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit:create blog">
       <created>1595689325825</created>
@@ -169,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596006678601</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add category model">
+      <created>1596106706937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596106706937</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add some custome template tags (simple and inclusion)">
+      <created>1596184469391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596184469391</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,48 +205,50 @@
     <MESSAGE value="admin panel managment" />
     <MESSAGE value="list of all articles and detail of an article" />
     <MESSAGE value="add some config to use a ready template" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some config to use a ready template" />
+    <MESSAGE value="add category model" />
+    <MESSAGE value="add some custome template tags (simple and inclusion)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some custome template tags (simple and inclusion)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595926867273">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1595926867273" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596006674260">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1596184466731">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596006674260" />
-    <state x="463" y="140" key="FileChooserDialogImpl" timestamp="1595936250159">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596184466731" />
+    <state x="463" y="140" key="FileChooserDialogImpl" timestamp="1596193659935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595936250159" />
-    <state width="1306" height="189" key="GridCell.Tab.0.bottom" timestamp="1596007937711">
+    <state x="463" y="140" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596193659935" />
+    <state width="1306" height="186" key="GridCell.Tab.0.bottom" timestamp="1596527029252">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1306" height="189" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
-    <state width="1306" height="189" key="GridCell.Tab.0.center" timestamp="1596007937711">
+    <state width="1306" height="186" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596527029252" />
+    <state width="1306" height="186" key="GridCell.Tab.0.center" timestamp="1596527029252">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1306" height="189" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
-    <state width="1306" height="189" key="GridCell.Tab.0.left" timestamp="1596007937711">
+    <state width="1306" height="186" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596527029252" />
+    <state width="1306" height="186" key="GridCell.Tab.0.left" timestamp="1596527029252">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1306" height="189" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
-    <state width="1306" height="189" key="GridCell.Tab.0.right" timestamp="1596007937711">
+    <state width="1306" height="186" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596527029252" />
+    <state width="1306" height="186" key="GridCell.Tab.0.right" timestamp="1596527029252">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1306" height="189" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596007937711" />
+    <state width="1306" height="186" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596527029252" />
     <state x="184" y="27" key="SettingsEditor" timestamp="1595836198160">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="27" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595836198160" />
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596006685908">
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596184473957">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596006685908" />
-    <state x="379" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1596090923407">
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596184473957" />
+    <state x="379" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1596130397882">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596090923407" />
+    <state x="379" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596130397882" />
   </component>
 </project>
